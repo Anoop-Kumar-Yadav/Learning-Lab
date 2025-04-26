@@ -78,7 +78,6 @@ class Car:
         print()
 
 
-
 c1 = Car(color="Green",model="WAGON-R",company="TATA",speed=9)
 
 print(c1.__doc__)
@@ -87,6 +86,12 @@ print(c1.__module__) #__main__
 print(c1.__class__) #<class '__main__.Car'>
 
 
+# isinstance(object,class) : check that given objetc is object of the given class or not
+class Demo:
+    pass
+
+print(isinstance(c1,Car)) #True
+print(isinstance(c1,Demo)) #False
 
 
 
